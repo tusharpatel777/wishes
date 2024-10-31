@@ -221,4 +221,25 @@
     0%, 100% { color: #888; }
     50% { color: #ffd700; text-shadow: 0 0 10px #ff6347; }
   }
-  
+  .music-icon {
+    width: 50px;
+    height: 50px;
+    background-color: #4CAF50; /* Change to your preferred color */
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.music-icon:hover {
+    background-color: #45a049; /* Change to a darker shade on hover */
+}
+
+.music-icon::before {
+    content: '▶'; /* Play icon (triangle) */
+    font-size: 30px;
+    color: white; /* Change color as needed */
+    transition: content 0.3s;
+}
