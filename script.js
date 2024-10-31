@@ -53,14 +53,14 @@
 //   });
 // });
 
-// // Play sound when the bomb image is clicked
-// const bombElement = document.getElementById("bombElement");
-// const bombSound = document.getElementById("bombSound");
+// Play sound when the bomb image is clicked
+const bombElement = document.getElementById("bombElement");
+const bombSound = document.getElementById("bombSound");
 
-// bombElement.addEventListener("click", () => {
-//   bombSound.currentTime = 0; // Reset sound to the beginning
-//   bombSound.play();
-// });
+bombElement.addEventListener("click", () => {
+  bombSound.currentTime = 0; // Reset sound to the beginning
+  bombSound.play();
+});
 
 // // Toggle background music
 // function toggleMusic() {
@@ -72,20 +72,20 @@
 //   }
 // }
 // Set up user interaction listener to start background music
-document.addEventListener("click", function playBackgroundMusic() {
-  const backgroundMusic = document.getElementById("backgroundMusic");
+// document.addEventListener("click", function playBackgroundMusic() {
+//   const backgroundMusic = document.getElementById("backgroundMusic");
 
-  // Attempt to play audio after the first interaction
-  backgroundMusic.play().then(() => {
-    backgroundMusic.muted = false; // Unmute if necessary
-    console.log("Background music started successfully.");
+//   // Attempt to play audio after the first interaction
+//   backgroundMusic.play().then(() => {
+//     backgroundMusic.muted = false; // Unmute if necessary
+//     console.log("Background music started successfully.");
 
-    // Remove this event listener after music starts playing
-    document.removeEventListener("click", playBackgroundMusic);
-  }).catch(error => {
-    console.error("Autoplay blocked even after interaction:", error);
-  });
-});
+//     // Remove this event listener after music starts playing
+//     document.removeEventListener("click", playBackgroundMusic);
+//   }).catch(error => {
+//     console.error("Autoplay blocked even after interaction:", error);
+//   });
+// });
 
 // Function to toggle background music playback
 // function toggleMusic() {
