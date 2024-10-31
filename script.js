@@ -7,6 +7,15 @@ bombElement.addEventListener("click", () => {
   bombSound.play();
 });
 
+function toggleMusic() {
+  const music = document.getElementById("backgroundMusic");
+  if (music.paused) {
+    music.play();
+  } else {
+    music.pause();
+  }
+}
+
 // document.getElementById("bombElement").addEventListener("click", function() {
 //     const bombSound = document.getElementById("bombSound");
 //     bombSound.play();
